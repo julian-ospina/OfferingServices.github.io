@@ -6,37 +6,40 @@ const menuToggle = document.getElementById('menu-toggle');
         });
 
         
-       
+    
+      const img = document.getElementById('carousel');
+const rightBtn = document.getElementById('right-btn');
+const leftBtn = document.getElementById('left-btn');
+
+// Images are from unsplash
+let pictures = ['img/shirt.png','img/boxes.png', 'img/ice-cream.png', 'img/bio-bags.png'];
+
+img.src = pictures[0];
+let position = 0;
+
+const moveRight = () => {
+    if (position >= pictures.length - 1) {
+        position = 0
+        img.src = pictures[position];
+        return;
+    }
+    img.src = pictures[position + 1];
+    position++;
+}
+
+const moveLeft = () => {
+    if (position < 1) {
+        position = pictures.length - 1;
+        img.src = pictures[position];
+        return;
+    }
+    img.src = pictures[position - 1];
+    position--;
+}
+
+rightBtn.addEventListener("click", moveRight);
+leftBtn.addEventListener("click", moveLeft);
 
      
-        const slides = document.querySelectorAll('.carousel-slide');
-        let currentSlide = 0;
-      
-        function showSlide(index) {
-          slides.forEach((slide, i) => {
-            if (i === index) {
-              slide.classList.add('active');
-            } else {
-              slide.classList.remove('active');
-            }
-          });
-        }
-      
-        function nextSlide() {
-          currentSlide++;
-          if (currentSlide >= slides.length) {
-            currentSlide = 0;
-          }
-          showSlide(currentSlide);
-        }
-      
-        function startCarousel() {
-          showSlide(currentSlide);
-          setInterval(() => {
-            nextSlide();
-          }, 5000); // Change slide every 5 seconds
-        }
-      
-        startCarousel(); // Start the carousel
    
       

@@ -10,7 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
     />
   </head>
-  <body>
+  <body >
     <!-- Navbar -->
     <nav class="bg-white p-6 lg:pr-16 lg:pl-16 flex items-center">
       <div class="container mx-auto flex justify-between items-center">
@@ -98,13 +98,73 @@
       >
     </div>
     <section
-      class="lg:mr-16 lg:ml-16 flex flex-col-reverse lg:flex-row p-10 pt-3"
+      class="lg:mr-8 lg:ml-6 flex flex-col-reverse lg:flex-row p-8 pt-3 "
     >
-      <div class="flex-none mb-4 md:mb-0 md:mr-4">
-        <img src="img/first.jpg" alt="img" class="w-full lg:w-96 mr-16 ml-2" />
+
+    <div class="carousel">
+ 
+    <main>
+        
+      <div class="containerA  max-w-full w-screen h-96 flex flex-row items-center justify-center md:justify-between">
+        <button class="buttonA -mr-1 " id="left-btn"><i class="arrow"></i></button>
+        <img class="h-auto object-cover" id="carousel" src="" alt="">
+        <button class="buttonB -ml-4" id="right-btn"><i class="arrow"></i></button>
+    </div>
+    
+    </main>
+
+    <style>
+      .containerA {
+    width: 650px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    /*  box-shadow is from materialize css's website */ 
+   
+}
+
+.buttonB, .buttonA {
+    height: 12%;
+    width: 13%;
+    border: none;
+    outline: none;
+    transition: 0.3s ease; 
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 20px;
+    display: flex;
+}
+.buttonB:hover, .buttonA:hover {
+  background-color: rgb(233, 249, 255, 0.3);
+}
+
+button .arrow {
+    border: solid #177cff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+    transition: transform 0.5s ease-out;
+    outline: none;
+}
+
+
+#right-btn .arrow {
+    transform: rotate(-45deg);
+}
+
+
+
+#left-btn .arrow {
+    transform: rotate(135deg);
+}
+    </style>
+
       </div>
+
+
+          
       <div
-        class="flex-grow max-w-xl md:max-w-3xl m-1 text-center lg:text-left lg:ml-14"
+        class="flex-grow max-w-xl md:max-w-3xl m-1 text-center lg:text-left lg:ml-4"
       >
         <div class="h-full flex flex-col ml-2 lg:ml-20 lg:flex items-center">
           <h1 class="text-gray-800 text-5xl pb-6">
