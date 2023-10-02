@@ -10,17 +10,19 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
     />
   </head>
-  <body >
+  <body>
     <!-- Navbar -->
     <nav class="bg-white p-6 lg:pr-16 lg:pl-16 flex items-center">
       <div class="container mx-auto flex justify-between items-center">
         <!-- Logo (left side) -->
         <div class="flex items-center">
-          <a href="index.html"><img src="img/logo.png" alt="Logo" class="w-32" /></a> 
+          <a href="index.html"
+            ><img src="img/logo.png" alt="Logo" class="w-32"
+          /></a>
         </div>
 
         <!-- Navigation Links (center) -->
-        <div class="hidden md:flex space-x-6 items-center">       
+        <div class="hidden md:flex space-x-6 items-center">
           <a
             href="about.html"
             class="text-blue-500 hover:text-violet-700 transition duration-300"
@@ -72,7 +74,8 @@
 
     <!-- Mobile Menu (hidden by default) -->
     <div id="mobile-menu" class="hidden bg-white md:hidden">
-      <a href="about.html"
+      <a
+        href="about.html"
         class="block py-2 px-4 text-blue-500 hover:bg-violet-700 transition duration-300"
         >About</a
       >
@@ -100,80 +103,73 @@
     <section
       class="lg:mr-6 lg:ml-4 flex flex-col-reverse lg:flex-row lg:p-8 pt-3 md:p-14 p-10 pb-0 -mt-8"
     >
+      <div class="carousel">
+        <main>
+          <div
+            class="containerA sm:h-6 max-w-full w-screen flex flex-row items-center justify-center md:justify-between"
+          >
+            <button class="buttonA" id="left-btn"><i class="arrow"></i></button>
+            <img class="h-auto object-cover" id="carousel" src="" alt="" />
+            <button class="buttonB" id="right-btn">
+              <i class="arrow"></i>
+            </button>
+          </div>
+        </main>
 
-    <div class="carousel">
- 
-    <main>
-        
-      <div class="containerA sm:h-6 max-w-full w-screen flex flex-row items-center justify-center md:justify-between">
-        <button class="buttonA" id="left-btn"><i class="arrow"></i></button>
-        <img class="h-auto object-cover" id="carousel" src="" alt="">
-        <button class="buttonB" id="right-btn"><i class="arrow"></i></button>
-    </div>
-    
-    </main>
+        <style>
+          @media (max-width: 640px) {
+            .containerA {
+              height: 300px !important; /* Set the height to 280 pixels for small screens */
+            }
+          }
 
-    <style>
-      
-      @media (max-width: 640px) {
-        .containerA {
-            height: 300px !important; /* Set the height to 280 pixels for small screens */
-        }
-    }
+          .containerA {
+            width: 750px;
+            height: 460px;
+            display: flex;
+            justify-content: center;
+            /*  box-shadow is from materialize css's website */
+          }
 
-      .containerA {
-    width: 750px;
-    height: 460px;
-    display: flex;
-    justify-content: center;
-    /*  box-shadow is from materialize css's website */ 
-   
-}
+          .buttonB,
+          .buttonA {
+            border: none;
+            outline: none;
+            transition: 0.3s ease;
+            cursor: pointer;
 
-.buttonB, .buttonA{
-   
-    border: none;
-    outline: none;
-    transition: 0.3s ease; 
-    cursor: pointer;
-   
-    border-radius: 20px;
-    display: flex;
-}
+            border-radius: 20px;
+            display: flex;
+          }
 
-.buttonB:hover, .buttonA:hover {
-  background-color: rgb(233, 249, 255, 0.3);
-}
+          .buttonB:hover,
+          .buttonA:hover {
+            background-color: rgb(233, 249, 255, 0.3);
+          }
 
-button .arrow {
-    border: solid #177cff;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 12px;
-    transition: transform 0.5s ease-out;
-    outline: none;
-}
+          button .arrow {
+            border: solid #177cff;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 12px;
+            transition: transform 0.5s ease-out;
+            outline: none;
+          }
 
+          #right-btn .arrow {
+            transform: rotate(-45deg);
+          }
 
-#right-btn .arrow {
-    transform: rotate(-45deg);
-}
-
-
-
-#left-btn .arrow {
-    transform: rotate(135deg);
-}
-    </style>
-
+          #left-btn .arrow {
+            transform: rotate(135deg);
+          }
+        </style>
       </div>
 
-
-          
       <div
         class="flex-grow max-w-xl md:max-w-3xl m-1 text-center lg:text-left lg:ml-4"
       >
-        <div class="h-full flex flex-col ml-2 lg:ml-16  lg:flex items-center">
+        <div class="h-full flex flex-col ml-2 lg:ml-16 lg:flex items-center">
           <h1 class="text-gray-800 text-5xl pb-6">
             <strong>Designing</strong> your dreams into reality
           </h1>
@@ -194,50 +190,59 @@ button .arrow {
     </section>
     <section></section>
 
-    <section
-      class=" flex justify-center items-center p-6 pt-8 text-center"
-    >
+    <section class="flex justify-center items-center p-6 pt-8 text-center">
       <div class="flex-row">
         <h1 class="text-4xl pb-24 text-gray-800">WHAT DO YOU NEED DESIGNED?</h1>
-        
-        <div class="max-w-screen-lg mx-auto">
 
+        <div class="max-w-screen-lg mx-auto">
           <!-- Website Section -->
           <div class="flex flex-col items-center sm:flex-row-reverse">
-            <img class="pb-16 sm:w-1/2 sm:pl-10" src="img/pc-phone.png" alt="img" />
+            <img
+              class="pb-16 sm:w-1/2 sm:pl-10"
+              src="img/pc-phone.png"
+              alt="img"
+            />
             <div class="w-full sm:w-1/2">
               <h2 class="text-2xl mt-6 sm:mt-0">Website</h2>
               <p class="text-gray-600 pb-8">
-                Empower your online presence with exceptional websites that captivate and convert.
+                Empower your online presence with exceptional websites that
+                captivate and convert.
               </p>
             </div>
           </div>
-        
+
           <!-- Logo & Branding Section -->
           <div class="flex flex-col items-center mt-12 sm:flex-row">
-            <img class="pb-16 sm:w-1/2 sm:pr-10" src="img/logo listo.png" alt="img" />
+            <img
+              class="pb-16 sm:w-1/2 sm:pr-10"
+              src="img/logo listo.png"
+              alt="img"
+            />
             <div class="w-full sm:w-1/2">
               <h2 class="text-2xl mt-6 sm:mt-0">Logo & Branding</h2>
               <p class="text-gray-600 pb-8">
-                Unlock your brand's potential with memorable logos and irresistible branding that sets you apart from the competition.
+                Unlock your brand's potential with memorable logos and
+                irresistible branding that sets you apart from the competition.
               </p>
             </div>
           </div>
-        
+
           <!-- Photo Editing Section -->
           <div class="flex flex-col items-center mt-12 sm:flex-row-reverse">
-            <img class="pb-16 sm:w-1/2 sm:pl-10" src="img/photo-editing.png" alt="img" />
+            <img
+              class="pb-16 sm:w-1/2 sm:pl-10"
+              src="img/photo-editing.png"
+              alt="img"
+            />
             <div class="w-full sm:w-1/2">
               <h2 class="text-2xl mt-6 sm:mt-0">Photo Editing</h2>
               <p class="text-gray-600 pb-8">
-                Elevate your images with precision editing and masterful Photoshop magic. Your vision, perfected.
+                Elevate your images with precision editing and masterful
+                Photoshop magic. Your vision, perfected.
               </p>
             </div>
           </div>
-        
         </div>
-        
-        
       </div>
     </section>
     <section
@@ -254,13 +259,14 @@ button .arrow {
           </p>
           <img class="pb-16" src="img/finaaal-real.png" alt="img" />
           <div>
-            <a href="#" class="inline-block py-1 px-2 border rounded-md bg-purple-500 text-white hover:bg-purple  -700 transition duration-300  mb-2 text-xl">start your brand!</a>
+            <a
+              href="#"
+              class="inline-block py-1 px-2 border rounded-md bg-purple-500 text-white hover:bg-purple -700 transition duration-300 mb-2 text-xl"
+              >start your brand!</a
+            >
           </div>
-          
         </div>
-        
       </div>
-      
     </section>
 
     <!--carousel -->
@@ -273,18 +279,24 @@ button .arrow {
       <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8 text-center">
         <div class="sm:flex sm:items-center sm:justify-between">
           <div class="flex items-center mb-4 sm:mb-0">
-          <a href="#"><img src="img/logo.png" class="h-8 mr-3" alt="Logo" /></a>  
+            <a href="#"
+              ><img src="img/logo.png" class="h-8 mr-3" alt="Logo"
+            /></a>
             <span
               class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
               >LizArt</span
             >
-            <a href="https://www.facebook.com/profile.php?id=61550758095384" target="_blank"
+            <a
+              href="https://www.facebook.com/profile.php?id=61550758095384"
+              target="_blank"
               ><img
                 class="w-10 ml-28 md:ml-16 lg:ml-4"
                 src="img/facebook.png"
                 alt="facebook"
             /></a>
-            <a href="https://www.instagram.com/liz_artists?fbclid=IwAR2Wj5ElHuOCllMXjMBluwb4dEiFGxc0Op4iWqBz6urFIW-pAjnaSC7bbTY" target="_blank"
+            <a
+              href="https://www.instagram.com/liz_artists?fbclid=IwAR2Wj5ElHuOCllMXjMBluwb4dEiFGxc0Op4iWqBz6urFIW-pAjnaSC7bbTY"
+              target="_blank"
               ><img
                 class="w-10 ml-8 md:ml-12 lg:ml-2"
                 src="img/instagram.png"
@@ -315,9 +327,8 @@ button .arrow {
         />
         <span
           class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
-          >© 2023
-          <a href="#" class="hover:underline">LizArt™</a>.
-          All Rights Reserved.</span
+          >© 2023 <a href="#" class="hover:underline">LizArt™</a>. All Rights
+          Reserved.</span
         >
       </div>
     </footer>
