@@ -627,6 +627,10 @@ video {
   margin-left: 2rem;
 }
 
+.mr-12 {
+  margin-right: 3rem;
+}
+
 .mr-16 {
   margin-right: 4rem;
 }
@@ -942,6 +946,10 @@ video {
   padding-bottom: 3rem;
 }
 
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -1009,6 +1017,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -1322,6 +1335,14 @@ video {
 
   .md\:ml-16 {
     margin-left: 4rem;
+  }
+
+  .md\:ml-24 {
+    margin-left: 6rem;
+  }
+
+  .md\:mr-24 {
+    margin-right: 6rem;
   }
 
   .md\:mr-4 {
