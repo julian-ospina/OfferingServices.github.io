@@ -40,5 +40,8 @@ const moveLeft = () => {
 rightBtn.addEventListener("click", moveRight);
 leftBtn.addEventListener("click", moveLeft);
 
- 
+
+
+
+
 
