@@ -12,7 +12,7 @@ const rightBtn = document.getElementById('right-btn');
 const leftBtn = document.getElementById('left-btn');
 
 // Images are from unsplash
-let pictures = ['img/shirt.png','img/boxes.png', 'img/ice-cream.png', 'img/bio-bags.png'];
+let pictures = ['img/shirt.webp','img/boxes.webp', 'img/board.webp', 'img/bio-bags.webp'];
 
 img.src = pictures[0];
 let position = 0;
