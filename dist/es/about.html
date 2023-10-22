@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre nosotros</title>
+    <!-- Incluir Tailwind CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+    />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="bg-white p-6 lg:pr-16 lg:pl-16 flex items-center">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo (lado izquierdo) -->
+        <div class="flex items-center">
+          <a href="index.html"
+            ><img src="../img/logo.png" alt="Logo" class="w-32"
+          /></a>
+        </div>
+
+        <!-- Enlaces de navegación (centro) -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a
+            href="about.html"
+            class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
+            >Acerca de nosotros</a
+          >
+          <a
+            href="services.html"
+            class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
+            >Servicios</a
+          >
+          <a
+            href="contact.html"
+            class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
+            >Contacto</a
+          >
+          <a
+            href="pricing.html"
+            class="text-blue-500  hover:text-blue-800 transition duration-300 ease-in-out"
+            >Precios</a
+          >
+          <a href="inspiration.html" class="custom-button p-2 border rounded-md text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 transition duration-1000 ease-in-out">
+            Inspiración
+          </a>  
+        </div>
+
+        <!-- Menú Hamburguesa (para pantallas pequeñas) -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-blue-500 focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menú móvil (oculto por defecto) -->
+    <div id="mobile-menu" class="hidden bg-white md:hidden">
+      <a
+        href="about.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Acerca de nosotros</a
+      >
+      <a
+        href="services.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Servicios</a
+      >
+      <a
+        href="contact.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Contacto</a
+      >
+      <a
+        href="pricing.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Precios</a
+      >
+      <a
+        href="callToAction.html"
+        class="block py-2 px-4 border-b border-solid border-purple-500  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Inspiración</a
+      >
+    </div>
+
+    <section
+      class=" flex justify-center items-center p-6 pt-8 text-center"
+    >
+      <div class="flex-row">
+        <div class="flex-row  pt-4 ">
+          <h1 class="text-blue-600 text-4xl pb-6 text-left">Acerca de <strong>Liz<span class="text-purple-600">Art</span></strong></h1>
+          <p class="text-gray-600 pb-4  text-left leading-7">
+            Estamos en una misión para elevar la imagen de tu negocio, permitiéndola brillar verdaderamente en un mundo competitivo. <br>
+             Tenemos una fuerte convicción de que nuestro trabajo puede impactar positivamente en el mundo. <br>
+             Cada historia de éxito es más que un cliente satisfecho: es una mejora en la sociedad. <br>
+              Únete a nosotros en este inspirador viaje para dejar una huella duradera.
+            <br>
+          </p>
+
+        <div class="max-w-screen-lg mx-auto">
+
+          <!-- Sección del Sitio Web -->
+          <div class="flex flex-col items-center sm:flex-row-reverse">
+            <img class="pb-16 sm:w-1/2 sm:pl-10" src="../img/helping.png" alt="img" />
+            <div class="w-full sm:w-1/2">
+              <h2 class="text-2xl mt-6 sm:mt-0 text-purple-500 pb-6 text-left">Juntos, logramos más</h2>
+              <p class="text-gray-600 pb-8 text-left leading-7">
+                En Lizart, creemos en el poder del trabajo en equipo. <br> Piensa en nuestro equipo como un rompecabezas: cada pieza es única y esencial. Cuando unimos fuerzas, nuestras diferentes habilidades y perspectivas encajan perfectamente, creando una imagen completa. Así como un rompecabezas está incompleto sin cada pieza, nuestros proyectos mejoran cuando cada miembro del equipo aporta sus talentos únicos. <br>
+                 Juntos, somos más fuertes.
+              </p>
+            </div>
+          </div>
+        
+          <!-- Sección de Logo y Branding -->
+          <div class="flex flex-col items-center mt-12 sm:flex-row">
+            <img class="pb-16 sm:w-1/2 sm:pr-10" src="../img/dancing.png" alt="img" />
+            <div class="w-full sm:w-1/2">
+              <h2 class="text-2xl mt-6 sm:mt-0 text-blue-500 pb-6 text-left lg:text-right">Disfruta <strong>el proceso</strong></h2>
+              <p class="text-gray-600 pb-6 text-left lg:text-right leading-7">
+                Valoramos tanto el destino como el viaje en LizArt. <br>
+                 Nuestro objetivo es crear diseños excepcionales, mientras hacemos que el cliente disfrute del proceso. <br>
+                 La colaboración, la innovación y el aprendizaje son fundamentales en nuestro viaje. <br>
+                 La alegría de crear diseños excepcionales es un logro en sí mismo, resaltando la importancia tanto del viaje como de la meta final.
+              </p>
+            </div>
+          </div>
+        
+          <!-- Sección de Edición de Fotos -->
+          <div class="flex flex-col items-center mt-12 sm:flex-row-reverse">
+            <img class="pb-16 sm:w-1/2 sm:pl-10 lg:pb-10" src="../img/you-are-important.png" alt="img" />
+            <div class="w-full sm:w-1/2">
+              <h2 class="text-2xl mt-6 sm:mt-0 text-purple-500 pb-6 text-left"><strong>Personas</strong></h2>
+              <p class="text-gray-600 pb-8 text-left">
+                Nuestros clientes son el corazón de LizArt. Creemos en el equipo de LizArt, ¡y eso incluye a nuestros increíbles clientes! Nos esforzamos por que cada experiencia les resulte encantadora, porque su felicidad es nuestro éxito. Estamos aquí para escuchar, aprender, y superar sus expectativas en cada paso del camino. <br>
+                 Un cliente feliz es una comunidad de LizArt feliz.
+              </p>
+            </div>
+          </div>
+        
+        </div>
+       
+      </div>
+      <div class="px-8">
+        <a href="services.html" class="block py-2 mx-auto max-w-xs border text-lg rounded-md bg-blue-500 text-white hover:bg-blue-700 transition duration-300 mt-8">Empezar</a>
+      </div>
+      
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8 text-center">
+        <div class="md:flex sm:items-center sm:justify-between">
+          <div class="flex items-center mb-4 sm:mb-0">
+            <a href="#"
+              ><img src="../img/logo.png" class="h-8 mr-3" alt="Logo"
+            /></a>
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >LizArt</span
+            >
+            <a
+              href="https://www.facebook.com/LizArtistis"
+              target="_blank"
+              ><img
+                class="w-10 ml-28 md:ml-16 lg:ml-4"
+                src="../img/facebook.png"
+                alt="facebook"
+            /></a>
+            <a
+              href="https://www.instagram.com/liz_artists?fbclid=IwAR2Wj5ElHuOCllMXjMBluwb4dEiFGxc0Op4iWqBz6urFIW-pAjnaSC7bbTY"
+              target="_blank"
+              ><img
+                class="w-10 ml-8 md:ml-12 lg:ml-2"
+                src="../img/instagram.png"
+                alt="instagram"
+            /></a>
+          </div>
+          <ul
+            class="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400 sm:justify-end"
+          >
+            <li>
+              <a href="about.html" class="mr-4 hover:underline md:mr-6">Acerca de</a>
+            </li>
+            <li>
+              <a href="Privacy policy.html" class="mr-4 hover:underline md:mr-6"
+                >Política de privacidad</a
+              >
+            </li>
+            <li>
+              <a href="terms-service.html" class="mr-4 hover:underline md:mr-6">Términos de uso</a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:underline">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2023 <a href="#" class="hover:underline">LizArt™</a>. Todos los derechos
+          reservados.</span
+        >
+      </div>
+    </footer>
+    <!-- JavaScript para alternar el menú móvil -->
+    <script src="script.js"></script>
+  </body>
+</html>

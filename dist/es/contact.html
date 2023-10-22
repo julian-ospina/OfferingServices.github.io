@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <!-- Incluir Tailwind CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+    />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="bg-white p-6 lg:pr-16 lg:pl-16 flex items-center">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo (lado izquierdo) -->
+        <div class="flex items-center">
+          <a href="index.html"
+            ><img src="../img/logo.png" alt="Logo" class="w-32"
+          /></a>
+        </div>
+
+        <!-- Enlaces de navegación (centro) -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a
+            href="about.html"
+            class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
+            >Acerca de</a
+          >
+          <a
+            href="services.html"
+            class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
+            >Servicios</a
+          >
+          <a
+            href="contact.html"
+            class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
+            >Contacto</a
+          >
+          <a
+            href="pricing.html"
+            class="text-blue-500  hover:text-blue-800 transition duration-300 ease-in-out"
+            >Precios</a
+          >
+          <a href="inspiration.html" class="custom-button p-2 border rounded-md text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 transition duration-1000 ease-in-out">
+            Inspiración
+          </a>  
+        </div>
+
+        <!-- Menú hamburguesa (para pantallas pequeñas) -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-blue-500 focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menú móvil (oculto por defecto) -->
+    <div id="mobile-menu" class="hidden bg-white md:hidden">
+      <a
+        href="about.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Acerca de</a
+      >
+      <a
+        href="services.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Servicios</a
+      >
+      <a
+        href="contact.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Contacto</a
+      >
+      <a
+        href="pricing.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Precios</a
+      >
+      <a
+        href="callToAction.html"
+        class="block py-2 px-4 border-b border-solid border-purple-500  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Inspiración</a
+      >
+    </div>
+    <section class="lg:mr-16 lg:ml-16 flex flex-col-reverse lg:flex-row p-6 pt-3 sm:pl-28 sm:pr-10 lg:pb-20">
+      <div class="flex-none mb-4 md:mb-0 md:mr-4">
+        <img src="../img/contact-ready.png" alt="Imagen" class="w-full lg:w-96 mr-16 ml-2" />
+      </div>
+      <div class="flex-grow max-w-xl md:max-w-3xl m-1">
+        <div class="h-full flex flex-col ml-2 lg:ml-10 lg:flex">
+          <h1 class="text-gray-800 text-5xl pb-8 text-left">¿Quieres ponerte en contacto?</h1>
+          <p class="text-purple-500 text-2xl pb-6 text-left">¡Nos encantaría saber de ti! <br /></p>
+          <div class="flex items-center pb-6">
+            <img src="../img/email.png" alt="Ícono de correo electrónico" class="w-10 mr-5" />
+            <a class="text-blue-500 text-lg" href="mailto:lizartists@gmail.com">lizartists@gmail.com</a>
+          </div>
+          <div class="flex items-center pb-6">
+            <a target="_blank" href="https://www.facebook.com/LizArtistis"><img src="../img/facebook.png" alt="Ícono de Facebook" class="mr-3" /></a> 
+            <a target="_blank" class="text-blue-500 text-lg" href="https://www.facebook.com/LizArtistis">Liz<span class="text-purple-500" >art</span> </a>
+          </div>
+          <div class="flex items-center pb-6">
+            <a target="_blank" href="https://www.instagram.com/liz_artists"><img src="../img/instagram.png" alt="Ícono de Instagram" class="mr-3" /></a> 
+            <a target="_blank" class="text-blue-500 text-lg" href="https://www.instagram.com/liz_artists">liz_artists</span> </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Logo y Branding -->
+    <div class="flex flex-col lg:flex-row p-10 pl-6 pr-6 lg:pl-20 lg:pr-20 sm:pl-28 sm:pr-28">
+      <div class="lg:w-1/2 text-center lg:pr-10">
+        <h2 class="text-4xl mt-6 sm:mt-0 pb-8 lg:pb-16 lg:pt-10">
+          ¿Necesitas <strong>ayuda?</strong>
+        </h2>
+        <button class="bg-purple-500 hover:bg-purple-700 rounded-md">
+          <a target="_blank" href="help.html"><p class="text-white pb-2 text-2xl pt-2 px-2 ">
+            ¡Contáctanos!</a>
+          </button>
+          <br>
+        </div>
+        <img class="pt-8 lg:w-1/2 pb-2 pl-6 pr-6 md:pr-20 md:pl-20 sm:pl-14 sm:pr-14 " src="../img/asistent ready.png" alt="img" />
+      </div>
+
+      <!-- Sección de Edición de Fotos -->
+
+      <!-- Carrusel -->
+
+      <!-- Referencias -->
+
+      <!-- Pie de página -->
+
+      <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8 text-center">
+          <div class="md:flex sm:items-center sm:justify-between">
+            <div class="flex items-center mb-4 sm:mb-0">
+              <a href="#"
+                ><img src="../img/logo.png" class="h-8 mr-3" alt="Logo"
+              /></a>
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+                >LizArt</span
+              >
+              <a
+                href="https://www.facebook.com/LizArtistis"
+                target="_blank"
+                ><img
+                  class="w-10 ml-28 md:ml-16 lg:ml-4"
+                  src="../img/facebook.png"
+                  alt="facebook"
+              /></a>
+              <a
+                href="https://www.instagram.com/liz_artists?fbclid=IwAR2Wj5ElHuOCllMXjMBluwb4dEiFGxc0Op4iWqBz6urFIW-pAjnaSC7bbTY"
+                target="_blank"
+                ><img
+                  class="w-10 ml-8 md:ml-12 lg:ml-2"
+                  src="../img/instagram.png"
+                  alt="instagram"
+              /></a>
+            </div>
+            <ul
+              class="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400 sm:justify-end"
+            >
+              <li>
+                <a href="about.html" class="mr-4 hover:underline md:mr-6">Acerca de</a>
+              </li>
+              <li>
+                <a href="Privacy policy.html" class="mr-4 hover:underline md:mr-6"
+                  >Política de privacidad</a
+                >
+              </li>
+              <li>
+                <a href="terms-service.html" class="mr-4 hover:underline md:mr-6">Términos de uso</a>
+              </li>
+              <li>
+                <a href="contact.html" class="hover:underline">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <hr
+            class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+          />
+          <span
+            class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+            >© 2023 <a href="#" class="hover:underline">LizArt™</a>. Todos los derechos reservados.</span
+          >
+        </div>
+      </footer>
+
+      <!-- JavaScript para alternar el menú móvil -->
+      <script src="script.js"></script>
+  </body>
+</html>

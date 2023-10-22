@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LizArt</title>
+    <!-- Incluir Tailwind CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+    />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+
+     <!-- Meta etiquetas para vista previa en redes sociales -->
+     <meta property="og:title" content="LizArt">
+     <meta property="og:description" content="¡Mejora la imagen de tu negocio!">
+     <meta property="og:image" content="https://lizartists.com/img/logo.png">
+     <meta property="og:url" content="https://lizartists.com">
+  </head>
+  <body>
+    
+
+    <!-- Barra de navegación -->
+    <nav class="bg-white p-6 lg:pr-16 lg:pl-16 flex items-center">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo (lado izquierdo) -->
+        <div class="flex items-center">
+          <a href="index.html"
+            ><img src="../img/logo.png" alt="Logo" class="w-32"
+          /></a>
+        </div>
+
+        <!-- Enlaces de navegación (centro) -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a
+            href="about.html"
+            class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
+            >Acerca de nosotros</a
+          >
+          <a
+            href="services.html"
+            class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
+            >Servicios</a
+          >
+          <a
+            href="contact.html"
+            class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
+            >Contacto</a
+          >
+          <a
+            href="pricing.html"
+            class="text-blue-500  hover:text-blue-800 transition duration-300 ease-in-out"
+            >Precios</a
+          >
+          <a href="inspiration.html" class="custom-button p-2 border rounded-md text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 transition duration-1000 ease-in-out">
+            Inspiración
+          </a>  
+        </div>
+
+        
+
+        <!-- Menú hamburguesa (para pantallas pequeñas) -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-blue-500 focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menú móvil (oculto por defecto) -->
+    <div id="mobile-menu" class="hidden bg-white md:hidden">
+      
+      <a
+        href="about.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Acerca de nosotros</a
+      >
+      <a
+        href="services.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Servicios</a
+      >
+      <a
+        href="contact.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Contacto</a
+      >
+      <a
+        href="pricing.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Precios</a
+      >
+      <a
+        href="inspiration.html"
+        class="block py-2 px-4 border-b border-solid border-purple-500  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Inspiración</a
+      >
+    </div>
+    <section
+      class="lg:mr-6 lg:ml-4 flex flex-col-reverse lg:flex-row lg:p-8 pt-3 md:p-14 p-10 pb-0 -mt-8 lg:pb-16"
+    >
+      <div class="carousel">
+        <main>
+          <div
+            class="containerA sm:h-6 max-w-full w-screen flex flex-row items-center justify-center md:justify-between"
+          >
+            <button class="buttonA" id="left-btn"><i class="arrow"></i></button>
+            <img class="h-auto object-cover" id="carousel" src="" alt="" />
+            <button class="buttonB" id="right-btn">
+              <i class="arrow"></i>
+            </button>
+          </div>
+        </main>
+
+        <style>
+          @media (max-width: 640px) {
+            .containerA {
+              height: 300px !important; /* Establecer la altura en 280 píxeles para pantallas pequeñas */
+            }
+          }
+
+          .containerA {
+            width: 750px;
+            height: 460px;
+            display: flex;
+            justify-content: center;
+            /* La sombra de la caja es de la página web de materialize css */
+          }
+
+          .buttonB,
+          .buttonA {
+            border: none;
+            outline: none;
+            transition: 0.3s ease;
+            cursor: pointer;
+
+            border-radius: 20px;
+            display: flex;
+          }
+
+          .buttonB:hover,
+          .buttonA:hover {
+            background-color: rgb(233, 249, 255, 0.3);
+          }
+
+          button .arrow {
+            border: solid #177cff;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 12px;
+            transition: transform 0.5s ease-out;
+            outline: none;
+          }
+
+          #right-btn .arrow {
+            transform: rotate(-45deg);
+          }
+
+          #left-btn .arrow {
+            transform: rotate(135deg);
+          }
+        </style>
+      </div>
+
+      <div
+        class="flex-grow max-w-xl md:max-w-3xl m-1 text-center lg:text-left lg:ml-4 pt-6"
+      >
+        <div class="h-full flex flex-col ml-2 lg:ml-16 lg:flex items-center">
+          <h1 class="text-gray-800 text-5xl pb-6">
+            <strong>Diseñando</strong> tus sueños en realidad
+          </h1>
+
+         
+          <p class="text-gray-600 ">
+            No importa las necesidades de tu negocio, podemos ayudarte con un profesional creativo para darle a tu negocio un aspecto pulido y profesional. Porque un diseño excepcional impulsa el éxito del negocio.
+           
+          </p>
+          <div>
+            <a
+              href="services.html"
+              class="block py-2 px-4 border text-lg  rounded-md bg-blue-500 text-white hover:bg-blue-700 transition duration-300 mt-8"
+              >¡Comienza ahora!</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section></section>
+
+    <section class="flex justify-center items-center p-6 pt-8 text-center">
+      <div class="flex-row">
+        <h1 class="text-5xl pb-24 text-gray-800">¿Qué necesitas <strong>diseñar</strong>?</h1>
+
+        <div class="max-w-screen-lg mx-auto">
+          <!-- Sección de Sitio web -->
+          <div class="flex flex-col items-center sm:flex-row-reverse">
+            <img
+              class="pb-12 sm:w-1/2 sm:pl-10"
+              src="../img/pc-phone.png"
+              alt="img"
+            />
+            <div class="w-full sm:w-1/2">
+              <h2 class="text-2xl mt-6 sm:mt-0 transition duration-300 hover:text-blue-500 ease-in-out "><a href="website-offer.html">Sitio web</a></h2>
+              <p class="text-gray-600 pb-8">
+                Potencia tu presencia en línea con sitios web excepcionales que cautivan y atraen.
+              </p>
+            </div>
+          </div>
+
+          <!-- Sección de Logo y Branding -->
+          <div class="flex flex-col items-center mt-12 sm:flex-row">
+            <img
+              class="pb-12 sm:w-1/2 sm:pr-10"
+              src="../img/logo listo.png"
+              alt="img"
+            />
+            <div class="w-full sm:w-1/2">
+              <h2 class="text-2xl mt-6 sm:mt-0 transition duration-300 hover:text-purple-500 ease-in-out"><a href="logo-making-offer.html">Logo y Branding</a></h2>
+              <p class="text-gray-600 pb-8">
+                Desbloquea el potencial de tu marca con logotipos memorables e irresistible branding que te diferencian de la competencia.
+              </p>
+            </div>
+          </div>
+
+          <!-- Sección de Edición de fotos -->
+          <div class="flex flex-col items-center mt-12 sm:flex-row-reverse">
+            <img
+              class="pb-12 sm:w-1/2 sm:pl-10"
+              src="../img/photo-editing.png"
+              alt="img"
+            />
+            <div class="w-full sm:w-1/2">
+              <h2 class="text-2xl mt-6 sm:mt-0 transition duration-300 hover:text-blue-500 ease-in-out"><a href="photo-editing-info.html">Edición de fotos</a></h2>
+              <p class="text-gray-600 pb-8">
+                Mejora tus imágenes con edición precisa y magia maestra de Photoshop. Tu visión, perfeccionada.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-white flex justify-center items-center pt-6 lg:pt-10 lg:pr-20 lg:pl-20 pl-6 pr-6 text-center"
+    >
+      <div class="flex-row">
+        <h1 class="text-5xl pb-8">Dale a tu negocio el diseño que se merece</h1>
+        <div>
+          <h2 class="text-2xl"><strong>Comienza tu camino de marca</strong></h2>
+          <div class="lg:px-14">
+            <p class="text-gray-600 pt-6 pb-10 leading-7">
+              En el mercado actual, una marca sólida no es solo una ventaja; es una estrategia de supervivencia. Eleva tu negocio con branding que te diferencia y deja una impresión duradera.
+            </p>
+          </div>
+          
+          <img class="pb-12" src="../img/finaaal-real.png" alt="img" />
+          <div>
+           
+
+            <a
+              href="services.html"
+              class="inline-block py-1 px-2 border rounded-md bg-purple-500 text-white hover:bg-purple-700 transition duration-300 mb-2 text-2xl"
+              >¡Comienza ahora!</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carrusel -->
+
+    <!-- Referencias -->
+
+    <!-- Pie de página -->
+
+    <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8 text-center">
+        <div class="md:flex sm:items-center sm:justify-between">
+          <div class="flex items-center mb-4 sm:mb-0">
+            <a href="#"
+              ><img src="../img/logo.png" class="h-8 mr-3" alt="Logo"
+            /></a>
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >LizArt</span
+            >
+            <a
+              href="https://www.facebook.com/LizArtistis"
+              target="_blank"
+              ><img
+                class="w-10 ml-28 md:ml-16 lg:ml-4"
+                src="../img/facebook.png"
+                alt="facebook"
+            /></a>
+            <a
+              href="https://www.instagram.com/liz_artists?fbclid=IwAR2Wj5ElHuOCllMXjMBluwb4dEiFGxc0Op4iWqBz6urFIW-pAjnaSC7bbTY"
+              target="_blank"
+              ><img
+                class="w-10 ml-8 md:ml-12 lg:ml-2"
+                src="../img/instagram.png"
+                alt="instagram"
+            /></a>
+          </div>
+          <ul
+            class="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400 sm:justify-end"
+          >
+            <li>
+              <a href="about.html" class="mr-4 hover:underline md:mr-6">Acerca de</a>
+            </li>
+            <li>
+              <a href="Privacy policy.html" class="mr-4 hover:underline md:mr-6"
+                >Política de privacidad</a
+              >
+            </li>
+            <li>
+              <a href="terms-service.html" class="mr-4 hover:underline md:mr-6">Términos de uso</a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:underline">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2023 <a href="#" class="hover:underline">LizArt™</a>. Todos los derechos reservados.</span
+        >
+      </div>
+    </footer>
+
+    <!-- JavaScript para alternar el menú móvil -->
+    <script src="script.js"></script>
+  </body>
+</html>
