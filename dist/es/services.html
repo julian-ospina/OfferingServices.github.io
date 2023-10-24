@@ -1,61 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Let's Start!</title>
-    <!-- Include Tailwind CSS -->
+    <title>¡Comencemos!</title>
+    <!-- Incluir Tailwind CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
     />
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
   </head>
   <body>
-    <!-- Navbar -->
+    <!-- Barra de navegación -->
     <nav class="bg-white p-6 lg:pr-16 lg:pl-16 flex items-center">
       <div class="container mx-auto flex justify-between items-center">
-        <!-- Logo (left side) -->
+        <!-- Logo (lado izquierdo) -->
         <div class="flex items-center">
           <a href="index.html"
-            ><img src="img/logo.png" alt="Logo" class="w-32"
+            ><img src="../img/logo.png" alt="Logo" class="w-32"
           /></a>
         </div>
 
-        <!-- Navigation Links (center) -->
+        <!-- Enlaces de navegación (centro) -->
         <div class="hidden md:flex space-x-6 items-center">
           <a
             href="about.html"
             class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
-            >About</a
+            >Acerca de</a
           >
           <a
             href="services.html"
             class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
-            >Services</a
+            >Servicios</a
           >
           <a
             href="contact.html"
             class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
-            >Contact</a
+            >Contacto</a
           >
           <a
             href="pricing.html"
             class="text-blue-500  hover:text-blue-800 transition duration-300 ease-in-out"
-            >Pricing</a
+            >Precios</a
           >
           <a href="inspiration.html" class="custom-button p-2 border rounded-md text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 transition duration-1000 ease-in-out">
-            Inspiration
+            Inspiración
           </a>  
         </div>
 
-        
-
-        <!-- Burger Menu (for small screens) -->
+        <!-- Menú de hamburguesa (para pantallas pequeñas) -->
         <div class="md:hidden">
           <button id="menu-toggle" class="text-blue-500 focus:outline-none">
             <svg
@@ -77,118 +75,114 @@
       </div>
     </nav>
 
-    <!-- Mobile Menu (hidden by default) -->
+    <!-- Menú móvil (oculto por defecto) -->
     <div id="mobile-menu" class="hidden bg-white md:hidden">
       
       <a
         href="about.html"
         class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
-        >About</a
+        >Acerca de</a
       >
       <a
         href="services.html"
-        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
-        >Services</a
+        class="block py-2 px-4  text-blue-500 hover-bg-blue-200 transition duration-300 ease-in-out"
+        >Servicios</a
       >
       <a
         href="contact.html"
         class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
-        >Contact</a
+        >Contacto</a
       >
       <a
         href="pricing.html"
         class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
-        >Pricing</a
+        >Precios</a
       >
       <a
         href="inspiration.html"
         class="block py-2 px-4 border-b border-solid border-purple-500  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
-        >Inspiration</a
+        >Inspiración</a
       >
     </div>
-     <section
+    
+    <section
       class="md:mr-24 md:ml-24 lg:mr-16 lg:ml-16 flex flex-col-reverse lg:flex-row p-10 pt-3 "
     >
       <div class="flex-none mb-4 md:mb-0 ">
-        <img src="img/logo-website.png" alt="img" class=" lg:w-96 mr-12 ml-2" />
+        <img src="../img/logo-website.png" alt="img" class=" lg:w-96 mr-12 ml-2" />
       </div>
       <div
         class="flex-grow max-w-xl md:max-w-3xl m-1 text-center lg:text-left lg:ml-10"
       >
         <div class="h-full flex flex-col  lg:ml-20 lg:flex items-center">
           <h1 class="text-gray-800 text-5xl pb-6">
-            <strong>Contact </strong> a designer
+            <strong>Contacta a un </strong> diseñador
           </h1>
           <p class="text-gray-600 pb-6">
-            We believe in understanding your specific needs and goals. <br>
-             Our approach is collaborative, to create customized design solutions that align perfectly with your brand identity and objectives.
+            Creemos en comprender tus necesidades y objetivos específicos. <br>
+             Nuestro enfoque es colaborativo, para crear soluciones de diseño personalizadas que se alineen perfectamente con la identidad de tu marca y tus objetivos.
           </p>
            <div class="pb-14 pt-8">
-            <button class="p-4 bg-purple-500 hover:bg-purple-700 rounded-md transition duration-300"><a target="_blank" class="text-white text-lg" href="free-consultation.html">Cost-free initial consultation </a></button>
+            <button class="p-4 bg-purple-500 hover:bg-purple-700 rounded-md transition duration-300"><a target="_blank" class="text-white text-lg" href="free-consultation.html">Consulta inicial sin costo </a></button>
           </div>
         </div>
       </div>
     </section> 
 
-    <!--carousel -->
+    <!-- Carrusel -->
     <div class="max-w-screen-lg mx-auto px-4">
-      <!-- Website Section -->
+      <!-- Sección de Sitio Web -->
       <div class="flex flex-col items-center sm:flex-row">
         <div class="w-full sm:w-1/2 flex flex-col justify-center">
           <h2 class="text-3xl mt-6 sm:mt-0 text-purple-500 pb-6 lg:text-center">
-            Get the logo you want!
+            ¡Obtén el logo que deseas!
           </h2>
           <p class="text-gray-600 pb-8 lg:text-left">
-            Let's design a logo that reflects your vision and captures attention, building a strong brand identity.
+            Diseñemos un logo que refleje tu visión y capte la atención, construyendo una fuerte identidad de marca.
           </p>
-          <a target="_blank" href="logo-making-offer.html" class="bg-blue-500 hover:bg-blue-700 transition duration-300 text-white py-2 px-6 rounded-md self-center text-lg">Logo design</a>
+          <a target="_blank" href="logo-making-offer.html" class="bg-blue-500 hover:bg-blue-700 transition duration-300 text-white py-2 px-6 rounded-md self-center text-lg">Diseño de logo</a>
         </div>
-        <img class="lg:pb-16 sm:w-1/2 sm:pl-10 p-6 pt-8" src="img/logos.png" alt="img" />
+        <img class="lg:pb-16 sm:w-1/2 sm:pl-10 p-6 pt-8" src="../img/logos.png" alt="img" />
       </div>
     
-      <!-- Logo & Branding Section -->
+      <!-- Sección de Logo y Branding -->
       <div class="flex flex-col items-center mt-12 sm:flex-row">
         <div class="w-full sm:w-1/2 flex flex-col justify-center">
           <h2 class="text-3xl mt-6 sm:mt-0 text-blue-500 pb-6 lg:text-center">
-            Let's build your website!
+            ¡Construyamos tu sitio web!
           </h2>
           <p class="text-gray-600 pb-8 lg:text-left">
-            Expand your reach and attract more clients by showcasing your business online with a professional website.
+            Amplía tu alcance y atrae más clientes al mostrar tu negocio en línea con un sitio web profesional.
           </p>
-          <a target="_blank" href="website-offer.html" class="bg-purple-500 hover:bg-purple-700 transition duration-300 text-white py-2 px-6 rounded-md self-center text-lg">Website design</a>
+          <a target="_blank" href="website-offer.html" class="bg-purple-500 hover:bg-purple-700 transition duration-300 text-white py-2 px-6 rounded-md self-center text-lg">Diseño de sitio web</a>
         </div>
-        <img class="pb-10 lg:pb-16 sm:w-1/2 sm:pr-10 pt-8" src="img/websites-call-to-action.png" alt="img" />
+        <img class="pb-10 lg:pb-16 sm:w-1/2 sm:pr-10 pt-8" src="../img/websites-call-to-action.png" alt="img" />
       </div>
     
-      <!-- Photo Editing Section -->
+      <!-- Sección de Edición de Fotos -->
       <div class="flex flex-col items-center mt-12 sm:flex-row">
         <div class="w-full sm:w-1/2 flex flex-col justify-center">
           <h2 class="text-3xl mt-6 sm:mt-0 text-purple-500 pb-6 lg:text-center">
-            Improve your photos
+            Mejora tus fotos
           </h2>
           <p class="text-gray-600 pb-8 lg:text-left">
-            Enhance your memories and make them everlasting by perfecting your photos with professional editing.
+            Realza tus recuerdos y haz que perduren perfeccionando tus fotos con edición profesional.
           </p>
-          <a target="_blank" href="photo-editing-info.html" class="bg-blue-500 hover:bg-blue-700 transition duration-300 text-white py-2 px-6 rounded-md self-center text-lg">Photo enhancement!</a>
+          <a target="_blank" href="photo-editing-info.html" class="bg-blue-500 hover:bg-blue-700 transition duration-300 text-white py-2 px-6 rounded-md self-center text-lg">Mejora de fotos</a>
         </div>
-        <img class="pb-10 sm:w-1/2 sm:pl-10 lg:pb-16 pt-8" src="img/photo-editing-call-to-action.png" alt="img" />
+        <img class="pb-10 sm:w-1/2 sm:pl-10 lg:pb-16 pt-8" src="../img/photo-editing-call-to-action.png" alt="img" />
       </div>
     </div>
     
+    <!-- Referencias -->
 
-
-    
-    
-    <!--references-->
-
-    <!--footer-->
-
+    <!-- Pie de página -->
     <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
       <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8 text-center">
         <div class="md:flex sm:items-center sm:justify-between">
           <div class="flex items-center mb-4 sm:mb-0">
             <a href="#"
-              ><img src="img/logo.png" class="h-8 mr-3" alt="Logo"
+              ><img src="../img/logo.png" class="h-8 mr-3" alt="Logo"
             /></a>
             <span
               class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
@@ -199,34 +193,34 @@
               target="_blank"
               ><img
                 class="w-10 ml-28 md:ml-16 lg:ml-4"
-                src="img/facebook.png"
-                alt="facebook"
+                src="../img/facebook.png"
+                alt="Facebook"
             /></a>
             <a
               href="https://www.instagram.com/liz_artists?fbclid=IwAR2Wj5ElHuOCllMXjMBluwb4dEiFGxc0Op4iWqBz6urFIW-pAjnaSC7bbTY"
               target="_blank"
               ><img
                 class="w-10 ml-8 md:ml-12 lg:ml-2"
-                src="img/instagram.png"
-                alt="instagram"
+                src="../img/instagram.png"
+                alt="Instagram"
             /></a>
           </div>
           <ul
             class="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400 sm:justify-end"
           >
             <li>
-              <a href="about.html" class="mr-4 hover:underline md:mr-6">About</a>
+              <a href="about.html" class="mr-4 hover:underline md:mr-6">Acerca de</a>
             </li>
             <li>
               <a href="Privacy policy.html" class="mr-4 hover:underline md:mr-6"
-                >Privacy Policy</a
+                >Política de Privacidad</a
               >
             </li>
             <li>
-              <a href="terms-service.html" class="mr-4 hover:underline md:mr-6">Terms of Use</a>
+              <a href="terms-service.html" class="mr-4 hover:underline md:mr-6">Términos de Uso</a>
             </li>
             <li>
-              <a href="contact.html" class="hover:underline">Contact</a>
+              <a href="contact.html" class="hover:underline">Contacto</a>
             </li>
           </ul>
         </div>
@@ -235,12 +229,12 @@
         />
         <span
           class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
-          >© 2023 <a href="#" class="hover:underline">LizArt™</a>. All Rights
-          Reserved.</span
+          >© 2023 <a href="#" class="hover:underline">LizArt™</a>. Todos los derechos
+          reservados.</span
         >
       </div>
     </footer>
-    <!-- JavaScript to toggle mobile menu -->
+    <!-- JavaScript para alternar el menú móvil -->
     <script src="script.js"></script>
   </body>
 </html>
