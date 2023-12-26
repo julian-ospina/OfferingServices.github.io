@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Términos de Uso</title>
+    <!-- Incluir Tailwind CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+    />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="bg-white p-6 lg:pr-16 lg:pl-16 flex items-center">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo (lado izquierdo) -->
+        <div class="flex items-center">
+          <a href="index.html"
+            ><img src="../img/logo.png" alt="Logo" class="w-32"
+          /></a>
+        </div>
+
+        <!-- Enlaces de navegación (centro) -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a
+            href="about.html"
+            class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
+            >Acerca de</a
+          >
+          <a
+            href="services.html"
+            class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
+            >Servicios</a
+          >
+          <a
+            href="contact.html"
+            class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
+            >Contacto</a
+          >
+          <a
+            href="pricing.html"
+            class="text-blue-500  hover:text-blue-800 transition duration-300 ease-in-out"
+            >Precios</a
+          >
+          <a href="inspiration.html" class="custom-button p-2 border rounded-md text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 transition duration-1000 ease-in-out">
+            Inspiración
+          </a>  
+        </div>
+
+        <!-- Menú de hamburguesa (para pantallas pequeñas) -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-blue-500 focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menú móvil (oculto por defecto) -->
+    <div id="mobile-menu" class="hidden bg-white md:hidden">
+      
+      <a
+        href="about.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Acerca de</a
+      >
+      <a
+        href="services.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Servicios</a
+      >
+      <a
+        href="contact.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Contacto</a
+      >
+      <a
+        href="pricing.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Precios</a
+      >
+      <a
+        href="inspiration.html"
+        class="block py-2 px-4 border-b border-solid border-purple-500  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Inspiración</a
+      >
+    </div>
+
+    <div class="container mx-auto p-6 lg:p-14">
+      <h1 class="text-2xl font-bold mb-6">Aceptación de Términos</h1>
+
+      <p class="mb-6 pb-4">
+        Al utilizar mi sitio web o servicios, aceptas los siguientes términos y condiciones. Si no estás de acuerdo con estos términos, por favor, no utilices mi sitio web, servicios o contáctame para obtener más asistencia en <a
+          href="mailto:lizartists@gmail.com" class="text-blue-500 hover:text-blue-700">lizartists@gmail.com</a>.
+      </p>
+
+      <h2 class="text-xl font-semibold mb-2">Ámbito del Acuerdo</h2>
+
+      <p class="mb-6 pb-4">
+        Estos términos y condiciones se aplican a todos los usuarios de mi sitio web y servicios, incluyendo visitantes, usuarios y miembros registrados.
+      </p>
+
+      <h2 class="text-xl font-semibold mb-2">Servicios</h2>
+
+      <p class="mb-2">Ofrezco una variedad de servicios de diseño de logotipos y sitios web, incluyendo:</p>
+      <ul class="list-disc ml-8 mb-6">
+        <li>Diseño de logotipos</li>
+        <li>Desarrollo de sitios web</li>
+        <li>Edición de fotos</li>
+        <li class="pb-4">Diseño gráfico</li>
+      </ul>
+
+      <h2 class="text-xl font-semibold mb-2">Pago</h2>
+
+      <p class="mb-6 pb-4">
+        Requiero un depósito del 50% por adelantado antes de comenzar cualquier proyecto. Esto puede ser flexible en algunas excepciones, como organizaciones sin fines de lucro, etc. El 50% restante se debe al completar el proyecto y recibir tu aprobación de los diseños finales.
+      </p>
+
+      <h2 class="text-xl font-semibold mb-2">Reembolsos</h2>
+
+      <p class="mb-6 pb-4">
+        No ofrezco reembolsos para proyectos completados en los que el cliente ha dado su aprobación y se ha realizado el pago restante. Sin embargo, emitiré un reembolso para un proyecto que aún no ha comenzado o está en progreso si no estás satisfecho con los diseños iniciales o el proyecto.
+      </p>
+
+      <h2 class="text-xl font-semibold mb-2">Propiedad Intelectual</h2>
+
+      <p class="mb-6 pb-4">
+        Todos los derechos de propiedad intelectual de los logotipos y sitios web que creamos pertenecen al cliente que realiza el pago. Se te concede una licencia exclusiva y transferible para usar los logotipos y sitios web para tu uso personal o empresarial. Tienes permitido modificar, distribuir o vender los logotipos y sitios web sin necesidad de permiso.
+      </p>
+
+      <h2 class="text-xl font-semibold mb-2">Limitación de Responsabilidad</h2>
+
+      <p class="mb-6 pb-4">
+        Hasta donde lo permita la ley, renuncio a todas las garantías, expresas o implícitas, y no asumo ninguna responsabilidad por daños o pérdidas derivadas del uso de mi sitio web o servicios.
+      </p>
+
+      <h2 class="text-xl font-semibold mb-2">Cambios en los Términos de Servicio</h2>
+
+      <p class="mb-6 pb-4">
+        Me reservo el derecho de actualizar estos términos de servicio en cualquier momento. Si realizo cambios sustanciales en estos términos de servicio, te notificaré publicando los términos actualizados en mi sitio web.
+      </p>
+
+      <h2 class="text-xl font-semibold mb-2">Contacto</h2>
+
+      <p>
+        Si tienes alguna pregunta sobre estos términos de servicio, por favor, contáctame en <a href="mailto:lizartists@gmail.com"
+          class="text-blue-500 hover:text-blue-700">lizartists@gmail.com</a>.
+      </p>
+    </div>
+
+    <!--footer-->
+
+    <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8 text-center">
+        <div class="md:flex sm:items-centrer sm:justify-between">
+          <div class="flex items-center mb-4 sm:mb-0">
+            <a href="#"
+              ><img src="../img/logo.png" class="h-8 mr-3" alt="Logo"
+            /></a>
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >LizArt</span
+            >
+            <a
+              href="https://www.facebook.com/LizArtistis"
+              target="_blank"
+              ><img
+                class="w-10 ml-28 md:ml-16 lg:ml-4"
+                src="../img/facebook.png"
+                alt="Facebook"
+            /></a>
+            <a
+              href="https://www.instagram.com/liz_artists?fbclid=IwAR2Wj5ElHuOCllMXjMBluwb4dEiFGxc0Op4iWqBz6urFIW-pAjnaSC7bbTY"
+              target="_blank"
+              ><img
+                class="w-10 ml-8 md:ml-12 lg:ml-2"
+                src="../img/instagram.png"
+                alt="Instagram"
+            /></a>
+          </div>
+          <ul
+            class="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400 sm:justify-end"
+          >
+            <li>
+              <a href="about.html" class="mr-4 hover:underline md:mr-6">Acerca de</a>
+            </li>
+            <li>
+              <a href="Privacy policy.html" class="mr-4 hover:underline md:mr-6"
+                >Política de Privacidad</a
+              >
+            </li>
+            <li>
+              <a href="terms-service.html" class="mr-4 hover:underline md:mr-6">Términos de Uso</a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:underline">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2023 <a href="#" class="hover:underline">LizArt™</a>. Todos los derechos
+          reservados.</span
+        >
+      </div>
+    </footer>
+
+    <!-- JavaScript para alternar el menú móvil -->
+    <script src="script.js"></script>
+  </body>
+</html>

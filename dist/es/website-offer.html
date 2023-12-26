@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitio Web</title>
+    <!-- Incluir Tailwind CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+    />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="bg-white p-6 lg:pr-16 lg:pl-16 flex items-center">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo (lado izquierdo) -->
+        <div class="flex items-center">
+          <a href="index.html"
+            ><img src="../img/logo.png" alt="Logo" class="w-32"
+          /></a>
+        </div>
+
+        <!-- Enlaces de navegación (centro) -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a
+            href="about.html"
+            class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
+            >Acerca de</a
+          >
+          <a
+            href="services.html"
+            class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
+            >Servicios</a
+          >
+          <a
+            href="contact.html"
+            class="text-blue-500 hover:text-blue-800 transition duration-300 ease-in-out"
+            >Contacto</a
+          >
+          <a
+            href="pricing.html"
+            class="text-blue-500  hover:text-blue-800 transition duration-300 ease-in-out"
+            >Precios</a
+          >
+          <a href="inspiration.html" class="custom-button p-2 border rounded-md text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 transition duration-1000 ease-in-out">
+            Inspiración
+          </a>  
+        </div>
+
+        <!-- Menú de hamburguesa (para pantallas pequeñas) -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-blue-500 focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menú móvil (oculto por defecto) -->
+    <div id="mobile-menu" class="hidden bg-white md:hidden">
+      
+      <a
+        href="about.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Acerca de</a
+      >
+      <a
+        href="services.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Servicios</a
+      >
+      <a
+        href="contact.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Contacto</a
+      >
+      <a
+        href="pricing.html"
+        class="block py-2 px-4  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Precios</a
+      >
+      <a
+        href="inspiration.html"
+        class="block py-2 px-4 border-b border-solid border-purple-500  text-blue-500 hover:bg-blue-200 transition duration-300 ease-in-out"
+        >Inspiración</a
+      >
+    </div>
+    <div class="max-w-screen-lg mx-auto px-4">
+
+      <!-- Sección del Sitio Web -->
+      <div class="flex flex-col items-center pb-6  md:flex-row">
+        <div class="w-full md:w-1/2">
+          <h2 class="text-5xl md:text-6xl mt-6 sm:mt-0 text-purple-500 pb-6 text-left">Diseño de <strong> sitios web</strong> a medida</h2>
+          <p class="text-gray-600 pb-6 text-left leading-7">
+            Impulsa tu negocio con un sitio web distintivo diseñado por nuestro equipo de expertos creativos independientes. El diseño creativo es esencial para el éxito, y un sitio web bien diseñado es una de las inversiones más importantes que puedes hacer para tu negocio.
+            <br> <br>
+            Nuestros servicios de diseño web son ideales para negocios de todos los tamaños y presupuestos. Podemos crear un sitio web personalizado para ti utilizando código, WordPress o Squarespace, según tus necesidades y preferencias.
+          </p>
+          <h3 class="pb-4"><b class="text-xl font-bold mb-4 transition duration-300 ease-in-out">Tus beneficios </b></h3>
+          <p class="text-gray-600 pb-8 text-left leading-6">
+            <b>-</b> Diseño web receptivo que se ve genial en todos los dispositivos.
+            <br> <br>
+            <b>-</b> Diseño web compatible con SEO que te ayuda a posicionarte más alto en los resultados de los motores de búsqueda.
+            <br> <br>
+            <b>-</b> Servidor seguro para tu sitio web.
+            <br> <br>
+            <b>-</b> Opciones de precios competitivos o paquetes personalizados.
+            <br> <br>
+            <b>-</b> Alojamiento seguro para tu sitio web.
+            <br> <br>
+            <b>-</b> Fácil de actualizar y administrar.
+          </p>
+        
+          <h3 class="pb-6"><b class="text-2xl font-bold transition duration-300 ease-in-out">Los precios comienzan en £200</b></h3>
+        
+         <div class="pb-4"> <a target="_blank" href="logo-info.html" class="bg-blue-500 hover:bg-blue-700 transition duration-300 text-white py-2 px-6 rounded-md self-center text-lg lg">Diseño de sitios web</a></div>
+      </div>
+        <img class="pb-8 px-4 sm:w-1/2 sm:pl-10" src="../img/many-sites.png" alt="img" />
+      </div>
+    
+      <!-- Sección de Logotipos e Imagen de Marca -->
+      <div class="container mx-auto ">
+        <!-- Sección 1: Por qué elegirnos -->
+        <div class="mb-6">
+          <h2 class="text-xl font-bold mb-4">Por qué elegirnos para el desarrollo web</h2>
+          <p class="text-gray-600 pb-4">
+            Nuestro equipo creativo de freelancers se compromete a entregar sitios web personalizados de alta calidad que representen verdaderamente tu negocio. Aquí tienes algunas razones por las cuales elegirnos es una gran decisión:
+          </p>
+          <ul class="mt-2 text-gray-600">
+            <li><b>-</b> Experiencia en diseño web personalizado. Tenemos experiencia en el diseño y desarrollo de sitios web para negocios de todos los tamaños e industrias.</li> <br>
+            <li><b>-</b> Conceptos de diseño creativos y únicos adaptados a tu marca.</li> <br>
+            <li><b>-</b> Entrega profesional y puntual de proyectos. Cumplimos con los plazos y entregamos trabajos de alta calidad de los que puedes estar orgulloso.</li> <br>
+            <li><b>-</b> Enfoque colaborativo para dar vida a tu visión. Trabajamos en estrecha colaboración con nuestros clientes a lo largo del proceso de diseño y desarrollo para garantizar que estén satisfechos con el producto final.</li>
+          </ul>
+        </div>
+      
+        <!-- Sección 2: Cómo empezar con tu sitio web -->
+        <div class=" ">
+          <h2 class="text-xl font-bold mb-4 transition duration-300 ease-in-out">Cómo empezar con tu sitio web
+
+          </h2>
+          <p class="text-gray-600 leading-7">
+            Obtener un sitio web personalizado de nuestro equipo es fácil y eficiente. Simplemente contáctanos <a class="text-blue-500 hover:text-blue-700" href="Website-info.html">aquí</a> o envíanos un correo electrónico a <a class="text-blue-500 hover:text-blue-700" href="mailto:lizartists@gmail.com">lizartists@gmail.com</a> para programar una <a target="_blank" class="text-blue-500 hover:text-blue-700" href="free-consultation.html">consulta gratuita</a>. Hablaremos de tus necesidades y requisitos y te proporcionaremos un presupuesto para nuestros servicios. Una vez que estés listo para empezar, comenzaremos el proceso de diseño y desarrollo.
+            <br> <br>
+            Trabajaremos contigo para desarrollar un sitio web que sea atractivo visualmente y eficaz. También nos aseguraremos de que tu sitio web sea receptivo y compatible con dispositivos móviles, para que se vea genial en todos los dispositivos.
+            <br> <br>
+            Una vez que tu sitio web esté completo, lo lanzaremos y te proporcionaremos capacitación sobre cómo administrarlo y actualizarlo. También ofreceremos soporte continuo para asegurarnos de que estés satisfecho con tu sitio web y que esté cumpliendo con tus necesidades.
+            <br> <br>
+            Estamos seguros de que podemos crear un sitio web que te ayude a alcanzar tus objetivos comerciales. Ponte en contacto con nosotros hoy mismo para <a href="Website-info.html" class=" p-2 rounded-md bg-blue-500 text-white hover:bg-blue-700 transition duration-300">Empezar</a>
+            
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Carrusel -->
+
+    <!-- Referencias -->
+
+    <!-- Pie de página -->
+    <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8 text-center">
+        <div class="md:flex sm:items-center sm:justify-between">
+          <div class="flex items-center mb-4 sm:mb-0">
+            <a href="#"
+              ><img src="../img/logo.png" class="h-8 mr-3" alt="Logo"
+            /></a>
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >LizArt</span
+            >
+            <a
+              href="https://www.facebook.com/LizArtistis"
+              target="_blank"
+              ><img
+                class="w-10 ml-28 md:ml-16 lg:ml-4"
+                src="../img/facebook.png"
+                alt="Facebook"
+            /></a>
+            <a
+              href="https://www.instagram.com/liz_artists?fbclid=IwAR2Wj5ElHuOCllMXjMBluwb4dEiFGxc0Op4iWqBz6urFIW-pAjnaSC7bbTY"
+              target="_blank"
+              ><img
+                class="w-10 ml-8 md:ml-12 lg:ml-2"
+                src="../img/instagram.png"
+                alt="Instagram"
+            /></a>
+          </div>
+          <ul
+            class="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400 sm:justify-end"
+          >
+            <li>
+              <a href="about.html" class="mr-4 hover:underline md:mr-6">Acerca de</a>
+            </li>
+            <li>
+              <a href="Privacy policy.html" class="mr-4 hover:underline md:mr-6"
+                >Política de Privacidad</a
+              >
+            </li>
+            <li>
+              <a href="terms-service.html" class="mr-4 hover:underline md:mr-6">Términos de Uso</a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:underline">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2023 <a href="#" class="hover:underline">LizArt™</a>. Todos los derechos
+          reservados.</span
+        >
+      </div>
+    </footer>
+
+    <!-- JavaScript para alternar el menú móvil -->
+    <script src="script.js"></script>
+  </body>
+</html>
